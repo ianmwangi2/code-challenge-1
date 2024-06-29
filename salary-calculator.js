@@ -21,13 +21,13 @@ if (isNaN(basicSalary) || isNaN(benefits)) {
     if (grossSalary <= 24000) {
     paye = grossSalary * 0.1;
     } else if (grossSalary <= 32333) {
-    paye = 2400 + (grossSalary - 24000) * 0.15;
+    paye = (grossSalary - 24000) * 0.15;
     } else if (grossSalary <= 40667) {
-    paye = 6333 + (grossSalary - 32333) * 0.2;
+    paye = (grossSalary - 32333) * 0.2;
     } else if (grossSalary <= 57000) {
-    paye = 11333 + (grossSalary - 40667) * 0.25;
+    paye = (grossSalary - 40667) * 0.25;
     } else {
-    paye = 16333 + (grossSalary - 57000) * 0.3;
+    paye = (grossSalary - 57000) * 0.3;
     }
 
     // paye results
