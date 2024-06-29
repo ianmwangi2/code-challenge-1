@@ -18,16 +18,16 @@ if (isNaN(basicSalary) || isNaN(benefits)) {
     // PAYE TAX
 
     let paye = 0;
-    if (grossSalary <= 288000) {
-    paye = (grossSalary -24000) * 0.1;
-    } else if (grossSalary <= 388000) {
-    paye = (grossSalary - 32333) * 0.25 + 1637.5;
-    } else if (grossSalary <= 6000000) {
-    paye = (grossSalary - 500000) * 0.30 + 4687.5;
-    } else if (grossSalary <= 9600000) {
-    paye = (grossSalary - 800000) * 0.325 + 9375;
+    if (grossSalary <= 24000) {
+    paye = grossSalary * 0.1;
+    } else if (grossSalary <= 32333) {
+    paye = 2400 + (grossSalary - 24000) * 0.15;
+    } else if (grossSalary <= 40667) {
+    paye = 6333 + (grossSalary - 32333) * 0.2;
+    } else if (grossSalary <= 57000) {
+    paye = 11333 + (grossSalary - 40667) * 0.25;
     } else {
-    paye = (grossSalary - 9600000) * 0.35 + 15625;
+    paye = 16333 + (grossSalary - 57000) * 0.3;
     }
 
     // paye results
