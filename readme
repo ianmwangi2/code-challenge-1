@@ -12,6 +12,9 @@ This is a simple JavaScript program that prompts the user to input students mark
 1. Clone the repository grom GitHub using the command `git clone https://github.com/ianmwangi2/code-challenge-1.git`
 2. Open the cloned repository in your code editor.
 
+** RUNNING THE CODE **
+To run the code you need to have node.js in your machine. Then in your terminal input node followed by the js file name and enter to run.
+
 ** CHECKING FOR ERRORS **
 The program checks for invalid inputs and displays an error message when:
 1. The user enters an invalid number for the marks
@@ -35,6 +38,8 @@ This is a JavaScript program that takes the speed of a car in (km/h) and gives d
 1. Clone the repository grom GitHub using the command `git clone https://github.com/ianmwangi2/code-challenge-1.git`
 2. Open the cloned repository in your code editor.
 
+** RUNNING THE CODE **
+To run the code you need to have node.js in your machine. Then in your terminal input node followed by the js file name and enter to run.
 
 
 
@@ -51,6 +56,9 @@ This is a simple Javascript program that calculates an individual's net salary b
 ** INSTALLATION **
 1. Clone the repository grom GitHub using the command `git clone https://github.com/ianmwangi2/code-challenge-1.git`
 2. Open the cloned repository in your code editor.
+
+** RUNNING THE CODE **
+To run the code you need to have node.js in your machine. Then in your terminal input node followed by the js file name and enter to run.
 
 ** CHECKING ERROS **
 The program will check for invalid inputs and display error messages when:

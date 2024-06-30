@@ -1,8 +1,8 @@
 // Declare input for basic salary, benefits and benefits
 
-const basicSalary = parseFloat(prompt('Enter basic salary: '));
+const basicSalary = parseFloat('Enter basic salary: ');
 
-const benefits = parseFloat(prompt('Enter benefits: '));
+const benefits = parseFloat('Enter benefits: ');
 
 // INVALID INPUT
 if (isNaN(basicSalary) || isNaN(benefits)) {
