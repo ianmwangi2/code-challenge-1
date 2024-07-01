@@ -1,12 +1,12 @@
 // Declare input for basic salary, benefits and benefits
 
-const basicSalary = parseFloat('Enter basic salary: ');
+const basicSalary = parseFloat(prompt('Enter basic salary: '));
 
-const benefits = parseFloat('Enter benefits: ');
+const benefits = parseFloat(prompt('Enter benefits: '));
 
 // INVALID INPUT
 function netSalary () {
-    
+
     if (isNaN(basicSalary) || isNaN(benefits)) {
         console.log('Invalid input. Please enter a valid basic salary and benefits.');
     } else if (basicSalary <= 0 || benefits <= 0) {
@@ -15,11 +15,10 @@ function netSalary () {
     
         // Gross salary
         const grossSalary = basicSalary + benefits;
-        console.log(`Gross Salary: ${grossSalary}`)
+        console.log(`Gross Salary: ${grossSalary}`);
     
         // PAYE TAX
-    
-        let paye = 0;
+        let paye = 0
         if (grossSalary <= 28895) {
             paye = grossSalary * 0.1;
         } else if (grossSalary <= 38895) {
@@ -37,7 +36,7 @@ function netSalary () {
         console.log(`PAYE: ${paye}`);
     
         // NHIF DEDUCTIONS
-        const nhifDeductions = 0;
+        let nhifDeductions = 0;
     
         // gross pay of upto 5999
         if (grossSalary <= 5999) {
@@ -144,7 +143,7 @@ function netSalary () {
         console.log(`Housing Levy: ${housingLevy}`);
     
         // NET SALARY
-        const netSalary = grossSalary - paye - nhifDeductions - nssfDeductions - housingLevy;
+        let netSalary = grossSalary - paye - nhifDeductions - nssfDeductions - housingLevy;
         
         //results
         console.log(`Net Salary: ${netSalary}`);
@@ -152,3 +151,5 @@ function netSalary () {
     }
     
 }
+
+console.log(netSalary());
