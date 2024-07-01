@@ -1,5 +1,5 @@
 function calculateDemeritPoints () {
-    let speed = parseInt(prompt("Enter the speed of the car (km/h): "));
+    let speed = 80;
 
     if (speed < 70) {
         console.log("OK");
@@ -8,8 +8,9 @@ function calculateDemeritPoints () {
         if (demeritPoints > 12) {
             console.log("License suspended");
         } else {
-            console.log(`Points: ${demeritPoints}`);
+            return demeritPoints
         }
     }
 }
 
+console.log(calculateDemeritPoints());
